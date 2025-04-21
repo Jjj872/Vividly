@@ -31,6 +31,7 @@ header {
     display: flex;
     text-align: center;
     justify-content: space-between;
+    box-shadow: 0 2px 4px lightgrey;
 }
 
 header a{
@@ -65,7 +66,38 @@ main *{
     font-size: 15px;
 }
 
+.section1 form {
+    display: flex  ;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
 
+.section1 input{
+    background-color: #FFAE00;
+    border-radius: 20px;
+    border-color: #FFAE00;
+    border: 0px;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    height: 25px;
+    width: 295px;
+}
+
+input::placeholder {
+    color: #252525;
+    opacity: 0.5;
+}
+
+.section1 button {
+    width: 40%;
+    height: 35px;
+    border-radius: 30px;
+    border: 0px;
+    background: linear-gradient(198.58deg, #FF7800 15.56%, #FFAE00 100%);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    cursor: pointer;
+    
+}
 
 /* SECTION 2 */
 
@@ -79,6 +111,7 @@ main *{
 
 .section2 h2{
     padding-left: 5px;
+    color: #252525;
 }
 
 .step-number{
@@ -86,8 +119,6 @@ main *{
     border-radius: 50%;
     width: 25px;
     height: 25px;
-   
-
 }
 
 
