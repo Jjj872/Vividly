@@ -116,10 +116,23 @@ input::placeholder {
 }
 
 .step-number{
-    background-color:#FFAE00;
+    background-color:#FF7800;
+    color: white;
     border-radius: 50%;
     width: 25px;
     height: 25px;
+    position: relative;
+    left: -25px;
+    text-align: center;
+}
+
+.Recommand a {
+    display: flex;
+    gap: 60px;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    
 }
 
 .step-text {
@@ -131,6 +144,8 @@ input::placeholder {
     flex-direction: column;
     gap: 15px;
     padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* SECTION 3 */
@@ -138,7 +153,6 @@ input::placeholder {
 .section3 {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     padding: 15px;
     background-color:#FFAE00 ;
   }
@@ -147,6 +161,10 @@ input::placeholder {
 .section3 img {
     width: 100%;
     border-radius: 20px;
+}
+
+.section3 h2 {
+    margin-bottom: 30px;
 }
 
 .section3 h3 {
@@ -176,6 +194,34 @@ input::placeholder {
     padding: 10px;
     border-radius: 0 0 20px 20px;
     padding-bottom: 5px;
+    position: relative;
+    top: -18%;
+  }
+
+  .img3 {
+    height: 210px;
+  }
+
+  .card1, .card2, .card3, .card4 {
+    max-height: 290px;
+  }
+
+  .section3 button {
+    width: 30%;
+    height: 35px;
+    border-radius: 30px;
+    border: 0px;
+    background: linear-gradient(198.58deg, #FF7800 15.56%, #FFAE00 100%);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    cursor: pointer;
+    position: relative;
+    left: 105px;
+    margin-bottom: 15px;
+  }
+
+  .section3 a {
+    color: black;
+    text-decoration: none;
   }
 
 /* FOOTER */
