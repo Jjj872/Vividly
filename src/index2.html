@@ -11,14 +11,35 @@
     <header>
         <div class="retour-logo"><a href="#"><i class="fa-solid fa-arrow-left"></i></a></div>
         <a href="#"><h1>Vividly</h1></a>
-        <div class="menu-logo"><a href="#"><i class="fa-solid fa-bars"></i></a></div>
+        <div class="menu-logo">
+            <a href="#">
+                <i class="fa-solid fa-bars"></i>
+                <a href="#"><p class="hidden">Home</p></a>
+                <a href="#"><p class="hidden">Find a professional</p></a>
+                <a href="#"><p class="hidden">Contact</p></a>
+            </a>
+        </div>
+        <!-- En version desktop tu as le menu qui est visible -->
     </header>
     <main>
         <!--SECTION 1-->
         <section class="section1">
             <img src="img/constructeur1.jpg" alt="Man with a drill in his hand">
+            <div class="desktoprecommand">
             <h2>Smith & Sons Construction Co.</h2>
-            <a href="#"><p>Recommand this professional</p><i class="fa-regular fa-thumbs-up"></i></a>
+            <div class="Recommandpro">
+                <a href="#"><p>Recommand this professional</p></a>
+                <form action="#">
+                    <input id="thumbs" type="checkbox">
+                    <label class="like" for="thumbs"></label>
+                </form>
+            </div>    
+            </div>
+            
+            
+            
+            
+            <!-- @keyframes -->
         </section>
 
 
@@ -67,7 +88,7 @@
                     <label for="politic">I accept the politic of confidentiality</label>
                   </div>
             </form>
-
+            <!-- Attention le bouton doit etre dans le form -->
             <div id="Sendsection4">
                 <button>Send</button>
             </div>

@@ -14,7 +14,68 @@ h2 {
 p {
     font-weight: 300;
 }
- 
+
+body {
+    position: relative;
+}
+
+/* LOADER */
+.loader-container {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    animation: backgroundindex 3s forwards ;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #FFFFFF 50%, #FF5C35 100%);
+  animation: spin 3s forwards;
+  
+}
+
+.inner-circle {
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+    opacity: 1;
+  }
+  to{
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes backgroundindex {
+   
+    to {
+        visibility: hidden;
+    }
+}
+
+
+
+
 
 
 /* HEADER */

@@ -43,6 +43,10 @@ header a {
     text-decoration: none;
 }
 
+.hidden {
+    display: none;
+}
+
 
 
 /* MAIN */
@@ -52,6 +56,51 @@ header a {
     width: 100%;
 }
 
+.Recommandpro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    gap: 10px;
+} 
+
+#thumbs {
+    display: none;
+}
+
+.like{
+    background-image: url(../img/thumbs-up-regular.svg);
+    width: 20px;
+    height:20px;
+    display: block;
+    /* animation: thumb 2s forwards;  */
+}
+
+input[type="checkbox"]:checked + .like{
+    animation: thumb 2s forwards; 
+}
+
+input[type="checkbox"]:hover + .like{
+    animation: thumb 2s forwards;
+}
+
+/* .section1 form {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: -20px;
+    padding-right: 15px;
+} */
+
+
+@keyframes thumb{
+    0%{
+        background-image: url(../img/thumbs-up-regular.svg);
+    }
+    100%{
+        background-image: url(../img/thumbs-up-solid.svg);
+    }
+}
 .section1 h2 {
     margin: 5px;
     display: flex;
@@ -289,6 +338,31 @@ footer ul{
         display: flex;
         gap: 50px;
     }
+    header .fa-bars {
+        display: none;
+    }
+    .hidden {
+        display: flex;
+        cursor: pointer;
+    }
+    header h1 {
+        padding-left: 300px;
+    }
+    .menu-logo {
+        display: flex ;
+        gap: 10px;
+        font-weight: 300;
+    }
+   .section1 a {
+        border-top: none;
+   } 
+   .desktoprecommand {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+   }
 
 
 }
