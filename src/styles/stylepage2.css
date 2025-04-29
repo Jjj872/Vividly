@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+h2 {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif; 
+    padding-bottom: 15px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif; 
+}
+
+p {
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* HEADER */
+
+header h1{
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/* MAIN */
+/* SECTION 1 */
+
+.section1 img {
+    width: 100%;
+}
+
+.section1 h2 {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section1 a {
+    border-top: 1px solid #FF7800;
+    justify-content: space-between;
+    display: flex;
+    width: 95%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fa-thumbs-up { 
+    font-size: 20px;
+}
+
+
+
+/* SECTION 2 */
+
+.section2 {
+    border-top: 1px solid #FF7800;
+}
+
+.section2 p {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif; 
+    padding: 15px;
+}
+
+.section2 h2 {
+    padding: 15px;
+}
+
+#similique { 
+    padding-top: 0px;
+}
+
+
+
+
+
+/* SECTION 3 */
+.section3 {
+    border-top: 1px solid #FF7800;
+    padding: 15px;
+}
+
+
+/* SECTION 4 */
+.section4 {
+    border-top: 1px solid #FF7800;
+}
+
+.section4 h2 {
+    font-weight: 700;
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+.section4 .fa-envelope, .fa-phone {
+    color: #FFAE00;
+}
+
+.section4 li {
+    display: flex;
+    margin-top: 15px;
+}
+
+.section4 h3 {
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 0;
+}
+
+#ullogo {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.fa-twitter , .fa-facebook , .fa-linkedin {
+    font-size: 20px;
+}
+
+.section4 form {
+    display: flex;
+    width: 90;
+    flex-direction: column;
+    gap: 17px;
+    padding: 15px;
+}
+
+.section4 input {
+    border: 1px solid #FF7800;
+    
+}
+
+.yourinfo {
+    height: 33px;
+}
+
+#yourmessage {
+    height: 168px;
+    border: 1px solid #FF7800;
+}
+
+#yourmessage::placeholder {
+    font-family: 'Inter';
+}
+
+.section4 button {
+    max-width: 130px;
+    width: 25%;
+    height: 33px;
+    background: linear-gradient(195.34deg, #FF7800 15.56%, #FFAE00 100%);
+    border: 1px solid #FF7800;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    border-radius: 25px;
+    font-size: 12.68px;
+    font-weight: 500;
+    font-family: 'Inter';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+#Sendsection4 {
+    margin-bottom: 30px;
+}
+
+#checkboxpolitic {
+    margin: 10px;
+    margin-left: 0px;
+    font-family: 'Inter';
+    font-size: 13.75px;
+    font-weight: 400;
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: #252525;
+    height: 198px;
+}
+
+footer h2{
+    color: white;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+footer li{
+    list-style-type: none;
+    font-weight: 300;
+}
+
+footer ul{
+    line-height: 28px;
+    padding-left: 15px;
+}
+
+
+/* MEDIA QUERY */
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+    .section1 img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover; 
+    }
+
+    .section2 h2, h3{
+        text-align: center;
+    }
+    .section3 h2, h3{
+        text-align: center;
+    }
+    .section4 h2, h3{
+        text-align: center;
+    }
+    .section4 ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .section4 li {
+        gap: 4px;
+    }
+    .fa-phone , .fa-envelope {
+        font-size: 20px;
+    }
+    .fa-twitter, .fa-facebook, .fa-linkedin {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    main {
+        max-width: 990px;
+        margin: auto;
+    }
+    footer {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        height: 65px;
+    }
+
+    footer ul {
+        display: flex;
+        gap: 50px;
+    }
+
+
+}
+
+

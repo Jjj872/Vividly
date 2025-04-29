@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shrikhand&display=swap');
-* {
-    max-width: 354px;
-}
 
 h1 {
     font-weight: 400;
@@ -73,14 +70,14 @@ main *{
     align-items: center;
 }
 
-.section1 input{
+.section1 input {
     background-color: #FFAE00;
     border-radius: 20px;
     border-color: #FFAE00;
     border: 0px;
     box-shadow: 0px 4px 15px 0px #00000026;
     height: 25px;
-    width: 295px;
+    min-width: 260px;
 
     
 }
@@ -91,6 +88,7 @@ input::placeholder {
 }
 
 .section1 button {
+    max-width: 130px;
     width: 40%;
     height: 35px;
     border-radius: 30px;
@@ -157,6 +155,15 @@ input::placeholder {
     flex-wrap: wrap;
     padding: 15px;
     background-color:#FFAE00 ;
+    gap: 40px;
+  }
+
+  .allcards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color:#FFAE00 ;
+    gap: 40px;
   }
 
   
@@ -199,7 +206,7 @@ input::placeholder {
     border-radius: 0 0 20px 20px;
     padding-bottom: 5px;
     position: relative;
-    top: -18%;
+    top: -17%;
   }
 
   .img3 {
@@ -219,18 +226,13 @@ input::placeholder {
     transform: rotate(-45deg);
   }
 
-  .card1 {
-    
-  }
 
-
-  .card1, .card2, .card3, .card4 {
-    max-height: 290px;
+.card2, .card4 {
     margin-bottom: -25px;
   }
 
-  .card3 {
-    padding-top: 30px;
+  .card3, .card1 {
+    margin-bottom: -80px;
   }
 
   .section3 button {
@@ -242,9 +244,7 @@ input::placeholder {
     box-shadow: 0px 4px 4px 0px #00000040;
     cursor: pointer;
     position: relative;
-    left: 105px;
-    margin-bottom: 15px;
-    margin-top: -5px;
+    margin: auto;
   }
 
   .section3 a {
@@ -285,4 +285,118 @@ footer li{
 footer ul{
     line-height: 28px;
     padding-left: 15px;
+}
+
+.allcards {
+    display: flex;
+}
+
+
+/* MEDIA QUERY TABLET */
+
+@media screen and (min-width: 600px) {
+
+    .menu-logo {
+        margin-top: 30px;
+        position: relative;
+        left: 30%;
+    }
+    
+    header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    }
+
+    .section1 input {
+        width: 70%;
+        max-width: 500px;
+    }
+    
+    .allcards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px 40px;
+    }
+    
+    .card1, .card2, .card3, .card4 {
+        margin-bottom: 0;
+    }
+
+    .section3 a { 
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .section3 h2 {
+        margin-bottom: -40px;
+        padding-left: 70px;
+    }
+
+    .img3 {
+        max-height: 298px;
+    }
+
+    .section3 button { 
+        max-width: 130px;
+        width: 40%;
+        margin-top: -70px;
+    }
+}
+
+
+
+
+
+/* MEDIA QUERY DESKTOP */
+
+@media screen and (min-width: 1024px) {
+
+    .section2 {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    
+    
+    .img3 {
+        
+        height: 62.5%;
+    }
+
+    .allcards {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    footer {
+        display: flex;
+        height: 70px;
+
+        align-items: center;
+    }
+
+    footer article {
+        line-height: 28px;
+        padding-left: 15px;
+        width: 100%;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    footer ul {
+        display: flex;
+        gap:40px;
+        justify-content: center;
+    }
+
+    footer h2 {
+        position: relative;
+        left: 15%;
+    }
+
+
+
+
 }
